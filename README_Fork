@@ -1,0 +1,16 @@
+This is the fork of logpai/Log3C. Here, I'm trying to
+
+* restructure code as I understand it better
+  * variable names, file names, function names
+  * indentation
+  * removing timing code to using decorator
+  * use argparse
+  * etc
+
+* dockerize the project
+
+* reverse engineer to create examples
+
+* and may be add unit tests
+
+* last but not the least, not claim this project to be mine :)
