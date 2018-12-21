@@ -37,10 +37,10 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("--seq_folder", default="seq_folder/", required=False,
-                        help="folder of log sequence matrix file")
+    parser.add_argument("--seq_folder", default="/seq_folder/", required=False,
+                        help="folder of log sequence matrix files")
 
-    parser.add_argument("--kpi_path", default="kpi_path/", required=False,
+    parser.add_argument("--kpi_path", default="/kpis/kpis.csv", required=False,
                         help="the path of KPI file")
 
     parser.add_argument("--proc_num", type=int, default=16, required=False,
@@ -55,10 +55,10 @@ if __name__ == '__main__':
     parser.add_argument("--save_file", type=bool, default=False, required=False,
                         help="FLAG to decide whether saving output clusters, it costs a lot if turned on")
 
-    parser.add_argument("--output_path", default="output_path", required=False,
+    parser.add_argument("--output_path", default="/output/", required=False,
                         help="folder for saving output clusters of data")
 
-    parser.add_argument("--rep_path", default="rep_path/", required=False,
+    parser.add_argument("--rep_path", default="/reps/", required=False,
                         help="path used for saving all representatives (patterns)")
 
     args = parser.parse_args()
